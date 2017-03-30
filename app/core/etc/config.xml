@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <appication><![CDATA[DPM's RESTlet]]></appication>
+    <name>Restlet</name>
+    <version>0.0.1</version>
+    <database>
+        <local>
+            <host>localhost</host>
+            <database></database>
+            <user>root</user>
+            <pass></pass>
+        </local>
+        <live>
+            <host>localhost</host>
+            <database></database>
+            <user>root</user>
+            <pass>root</pass></live>
+    </database>
+    <auth>
+        <hash_text>Jerusalem</hash_text>
+        <hash>e135a067fc096a19d7eb5ac64efd8bab3ff24017</hash>
+    </auth>
+</config>
