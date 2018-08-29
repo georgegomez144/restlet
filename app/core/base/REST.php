@@ -175,11 +175,11 @@ final class REST
         {
             $headers = REST::getHeaders();
             if(!in_array('HASH:'.REST::getAuth('hash'),$headers))
-            { REST::red($errorMessage); return false; }
+            { REST::red($errorMessage); return die; }
         } else {
             $providedSecurity = $_GET['hash'];
             if(REST::getAuth('hash') !== $providedSecurity)
-            { REST::red($errorMessage); return false; }
+            { REST::red($errorMessage); return die; }
         }
     }
 
@@ -223,14 +223,16 @@ final class REST
      */
     public static function devMode($bool)
     {
+    	define('DEV_MODE', $bool);
         if($bool)
         {
-            header("HASH:e135a067fc096a19d7eb5ac64efd8bab3ff24017");
+            header("USER:15caf4c16c8c1b64266e8a13ec65e44f69066995");
+            header("HASH:".AUTH_HASH);
         }
     }
 
     public static function red($msg)
     {
-        echo '<h4 style="color: red;">&rArr; '.$msg.'</h4>';
+        echo '<h4 style="color: red;">'.$msg.'</h4>';
     }
 }

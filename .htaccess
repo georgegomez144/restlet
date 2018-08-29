@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 
-RewriteBase /
+RewriteBase /restlet/
 
 RewriteEngine On
 

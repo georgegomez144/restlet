@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <config>
-    <appication><![CDATA[DPM's RESTlet]]></appication>
+    <appication><![CDATA[DPM's Restlet]]></appication>
     <name>Restlet</name>
     <version>0.0.1</version>
     <database>
         <local>
             <host>localhost</host>
-            <database></database>
-            <user>root</user>
-            <pass></pass>
+            <database>mban_db</database>
+            <user>mban_admin</user>
+            <pass><![CDATA[Jerusalem<3!]]></pass>
         </local>
         <live>
             <host>localhost</host>
             <database></database>
             <user>root</user>
-            <pass>root</pass></live>
+            <pass>root</pass>
+        </live>
     </database>
     <auth>
         <hash_text>Jerusalem</hash_text>
